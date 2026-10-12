@@ -1,0 +1,14 @@
+# Copy this file to terraform.tfvars and adjust as needed.
+# terraform.tfvars is gitignored — never commit it.
+# Note: there is no password variable here on purpose — RDS generates and
+# stores the master password in Secrets Manager (manage_master_user_password = true).
+
+aws_region = "us-east-1"
+
+# project_name            = "rds-lab"
+# engine_version           = "8.0"
+# instance_class           = "db.t3.micro"
+# allocated_storage_gb     = 20
+# multi_az                 = false  # NOT Free-Tier eligible — see README "Cost considerations"
+# backup_retention_days    = 7
+# master_username          = "admin"
